@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const AppController = require('../controllers/AppController');
 const UserController = require('../controllers/UsersController');
+import AuthController from '../controllers/AuthController';
 const FilesController = require('../controllers/FilesController');
 
 router.get('/files/:id/data', FilesController.getFile);
